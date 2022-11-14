@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -36,18 +36,15 @@
           </ul>
           <ul class="list contacts">
             <li>
-              <a
-                class="link contacts__head"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="icon-envelope" width="16" height="12">
+              <a class="link contacts__head" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icon.svg#envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li>
               <a class="link contacts__head" href="tel:+380961111111"
-                ><svg class="icon-envelope" width="10" height="16">
+                ><svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icon.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -60,7 +57,7 @@
       <section class="solution">
         <div class="container solution__container">
           <h1 class="solution__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class=" btn btn--solution" data-modal-open>
+          <button type="button" class="btn btn--solution" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -71,7 +68,7 @@
           <h2 class="visually-hidden">Переваги Вебстудіо</h2>
           <ul class="list benefits__list">
             <li class="benefits__item">
-              <div class="icon">
+              <div class="benefits__icon">
                 <svg class="icon__svg" width="70" height="70">
                   <use href="./images/icon.svg#antenna"></use>
                 </svg>
@@ -83,7 +80,7 @@
               </p>
             </li>
             <li class="benefits__item">
-              <div class="icon">
+              <div class="benefits__icon">
                 <svg class="icon__svg" width="70" height="70">
                   <use href="./images/icon.svg#clock"></use>
                 </svg>
@@ -95,7 +92,7 @@
               </p>
             </li>
             <li class="benefits__item">
-              <div class="icon">
+              <div class="benefits__icon">
                 <svg class="icon__svg" width="70" height="70">
                   <use href="./images/icon.svg#diagram"></use>
                 </svg>
@@ -106,7 +103,7 @@
               </p>
             </li>
             <li class="benefits__item">
-              <div class="icon">
+              <div class="benefits__icon">
                 <svg class="icon__svg" width="70" height="70">
                   <use href="./images/icon.svg#astronaut"></use>
                 </svg>
@@ -335,43 +332,43 @@
 
           <ul class="list clients">
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo5"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="cliens__link" href="">
-                <svg class="cliens__icons" width="106" height="60">
+              <a class="clients__link" href="">
+                <svg class="clients__icons" width="106" height="60">
                   <use href="./images/icon.svg#logo6"></use>
                 </svg>
               </a>
@@ -445,7 +442,7 @@
           <label for="sub-email" class="footer__title"
             >Підпишіться на розсилку</label
           >
-          <div class="foter-input">
+          <div class="footer-input">
             <input
               type="email"
               name="sub-email"
@@ -482,7 +479,7 @@
                 <input
                   type="text"
                   name="user-name"
-                  class="modal-input"
+                  class="modal__input"
                   placeholder=" "
                   title="Іван Мазепа"
                   required
@@ -501,7 +498,7 @@
                 <input
                   type="tel"
                   name="user-tel"
-                  class="modal-input"
+                  class="modal__input"
                   placeholder=" "
                   title="+380 (96) 111-11-11"
                   required
@@ -518,7 +515,7 @@
                 <input
                   type="email"
                   name="user-email"
-                  class="modal-input"
+                  class="modal__input"
                   placeholder=" "
                   title="my@mail.com"
                   required
@@ -529,7 +526,9 @@
             ></label>
           </div>
           <div class="modal__field">
-            <label for="user-comment" class="modal__input-label">Коментар</label>
+            <label for="user-comment" class="modal__input-label"
+              >Коментар</label
+            >
             <textarea
               name="user-comment"
               id="user-comment"
@@ -544,7 +543,7 @@
               name="user-checkbox"
               value="sub"
             /><span class="label-checkbox__icon">
-              <svg class="modal-icon" width="16" height="15">
+              <svg class="label-checkbox__svg" width="16" height="15">
                 <use href="./images/icon.svg#vector"></use>
               </svg>
             </span>
@@ -555,9 +554,7 @@
               Умови договору</a
             >
           </label>
-          <button class="btn modal-btn" type="submit">
-            Відправити
-          </button>
+          <button class="btn btn--modal" type="submit">Відправити</button>
         </form>
       </div>
     </div>

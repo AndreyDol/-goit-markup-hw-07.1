@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -28,7 +28,9 @@
               <a class="link nav__head" href="./index.html">Студія </a>
             </li>
             <li>
-              <a class="link nav__head current" href="./portfolio.html">Портфоліо </a>
+              <a class="link nav__head current" href="./portfolio.html"
+                >Портфоліо
+              </a>
             </li>
             <li>
               <a class="link nav__head" href="#">Контакти</a>
@@ -36,18 +38,15 @@
           </ul>
           <ul class="list contacts">
             <li>
-              <a
-                class="link contacts__head"
-                href="mailto:info@devstudio.com"
-              >
-                <svg class="icon-envelope" width="16" height="12">
+              <a class="link contacts__head" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
                   <use href="./images/icon.svg#envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
             <li>
               <a class="link contacts__head" href="tel:+380961111111"
-                ><svg class="icon-envelope" width="10" height="16">
+                ><svg class="contacts__icon" width="10" height="16">
                   <use href="./images/icon.svg#smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -57,7 +56,7 @@
       </div>
     </header>
     <main>
-      <section class=" filter section">
+      <section class="filter section">
         <div class="container">
           <h1 class="visually-hidden">Проєкти і фільтри</h1>
           <ul class="list filter__container">
@@ -114,9 +113,7 @@
                   </p>
                 </div>
                 <div class="card__project">
-                  <h2 class="card__title">
-                    Постер New Orlean vs Golden Star
-                  </h2>
+                  <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
                   <p class="card__paragraph">Дизайн</p>
                 </div></a
               >
@@ -265,7 +262,7 @@
         </div>
       </section>
     </main>
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div>
           <a class="link logo logo--futer" href="./index.html"
@@ -330,7 +327,7 @@
           <label for="sub-email" class="footer__title"
             >Підпишіться на розсилку</label
           >
-          <div class="foter-input">
+          <div class="footer-input">
             <input
               type="email"
               name="sub-email"
